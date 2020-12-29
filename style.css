@@ -1,0 +1,147 @@
+* {
+	padding:0;
+	margin: 0;
+}
+
+body{
+	background-color: #f8f9fa;
+}
+
+#home {
+	background-color: #f8f9fa;
+	background-image: url("images/jumbo-phone.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 2rem;
+}
+
+.responsive-title {
+	font-size: 24px;
+}
+
+.title-color {
+	color: #0D1437;
+}
+
+.subtitle-color {
+	color: #8C2025;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
+#login-form {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 300px;
+	border-radius: 10px;
+	border: solid 2px #f8f9fa;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	position: static;
+}
+
+#senseis-table img{
+	width: 75%;
+}
+
+.schedule-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	width: 90%;
+	margin:auto;
+}
+
+.schedule-col {
+	text-align: center;
+	flex-basis: 100%;
+}
+
+.schedule-col .class{
+	width: 95%;
+	margin-bottom: 10px;
+}
+
+.schedule-container .btn {
+		font-size: 1rem;
+}
+
+.schedule-container {
+		font-size: 1rem;
+}
+
+#logged-in{
+	background-color:#68727d;
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#home {
+		background-image: url("images/jumbo.jpg");
+	}
+
+	.navbar-center {
+		margin-left: auto;
+		margin-right: auto;
+		transform: translate(-15%);
+	}
+
+	#login-form {
+		width: 350px;
+	}
+
+	.responsive-title {
+		font-size: 30px;
+	}
+
+	.schedule-container {
+		flex-direction: row;
+		width: 95%;
+		font-size: .75rem;
+	}
+
+	.schedule-container .btn {
+		font-size: .75rem;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#login-form {
+		width: 500px;
+	}
+
+	.schedule-container .btn {
+		font-size: 1rem;
+	}
+
+	.schedule-container {
+		font-size: 1rem;
+	}
+
+	.responsive-title {
+		font-size: 42px;
+	}
+}
